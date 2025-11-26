@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+body,html{
+  font-family: "Stardos Stencil";
+  background-color: #252525;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  color: #ffd700;
+  font-size: 50px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+
+header .cerrar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 70px;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+h1{
+  margin: 0;
+  color: #ffd700;
+  text-shadow:0 0 8px #ffd700;
+}
+
+.ruleta{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url("/assets/ruleta.png");
+  background-size: cover;
+  background-position: center;
+  background-size: 170%;
+  animation: rotar 10s linear infinite;
+  margin: 0;
+  display: flex;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 150px;
+  width: 400px;
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: #252525;
+  text-decoration: none;
+  font-size: 120px;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.boton:hover{
+  background-color: #ffd700;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+.juego-contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20%;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 20%;
+  font-size: 50px;
+  color: #ccc;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 44px;
+  background: transparent;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 28px;
+  background: #800020;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 28px;
+  background: #800020;
+  border-radius: 4px;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  margin-top: -7px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+/* ---------- COLORES POR SLIDER ---------- */
+/* Volumen general – naranja */
+.color-volumen::-webkit-slider-thumb { background: #ffd700; }
+.color-volumen::-moz-range-thumb { background: #ffd700; }
+
+/* Música – azul */
+.color-musica::-webkit-slider-thumb { background: #ffd700; }
+.color-musica::-moz-range-thumb { background: #ffd700; }
+
+/* Sonido – verde */
+.color-sonido::-webkit-slider-thumb { background: #ffd700; }
+.color-sonido::-moz-range-thumb { background: #ffd700; }

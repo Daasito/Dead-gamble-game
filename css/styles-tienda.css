@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+body,html{
+  font-family: "Stardos Stencil";
+  background-color: #252525;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  color: #ffd700;
+  font-size: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+}
+
+
+header .cerrar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 70px;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+h1{
+  margin: 0;
+  color: #ffd700;
+  text-shadow:0 0 8px #ffd700;
+}
+
+.boton.vertical {
+  writing-mode: vertical-rl; 
+  text-orientation: upright;
+}
+
+.contenedor {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-contenedor {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  margin: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.boton {
+  display: block;
+  width: 300px;
+  height: 600px;
+  line-height: 80px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: #800020;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.boton.principal {
+  display: block;
+  width: 300px;
+  height: 600px;
+  line-height: 80px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 45px;
+  color:#38000e;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: radial-gradient(circle,rgba(128, 0, 32, 1) 0%, rgba(26, 0, 7, 1) 100%);
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.boton.secundario {
+  opacity: 0;
+  pointer-events: none;
+  width: 300px;
+  height: 240px;
+  line-height: 80px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  transition: all 0s ease;
+}
+
+
+.boton-contenedor:hover .boton.principal {
+  opacity: 0;
+}
+
+.boton-contenedor:hover .boton.secundario:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  top: 0px;
+  background-color: radial-gradient(circle,#800020 0%, rgba(26, 0, 7, 1) 100%);
+}
+
+.boton-contenedor:hover .boton.secundario:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  top: 360px;
+  background-color: #800020;
+}
+

@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+body,html{
+  font-family: "Stardos Stencil";
+  background-color: #252525;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  color: #ffd700;
+  font-size: 120px;
+  margin-top: 350PX;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+
+header .cerrar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 70px;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+h1{
+  margin: 0;
+  color: #ffd700;
+  text-shadow:0 0 8px #ffd700;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 75px;
+  width: 200px;
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: #252525;
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.boton:hover{
+  background-color: #ffd700;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+.juego-contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+

@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+body,html{
+  font-family: "Stardos Stencil";
+  background-color: #252525;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #ffd700;
+  font-size: 50px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+
+header .cerrar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 70px;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+h1{
+  margin: 0;
+  color: #ffd700;
+  text-shadow:0 0 8px #ffd700;
+}
+
+
+.circulo {
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, #800020 0%, rgba(26,0,7,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circulo:hover {
+ 
+  background: radial-gradient(circle, #ffd700 0%, rgba(26,0,7,1) 100%);
+  
+}
+
+.circulo img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.circulo1 {
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, #4CAF50 0%, rgba(26,0,7,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.circulo2 {
+  width: 240px;
+  height: 240px;
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.circulo2 img {
+  width: 800px;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-size: 170%;
+  animation: rotar 10s linear infinite;
+  margin: 0;
+  margin-top: 0px;
+  margin-left: 850px;
+  display: flex;
+}
+.circulo3 {
+  width: 240px;
+  height: 240px;
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.circulo3 img {
+  width: 500px;
+  height: 500px;
+  
+  background-size: cover;
+  background-position: center;
+  background-size: 170%;
+  animation: rotar 10s linear infinite;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 650px;
+  display: flex;
+}
+
+.boton-oculto1 {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 130px;
+  cursor: pointer;
+  
+}
+
+.circulo1:hover {
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, #ffd700 0%, rgba(26,0,7,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.vertical-derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-derecha .circulo {
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, #800020 0%, rgba(26,0,7,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+a{
+  color: initial;
+  font-size: initial;
+  text-shadow: none;
+  text-decoration: none;
+  font-size: 140px;
+}
